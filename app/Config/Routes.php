@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'AdminHome::index', ['filter' => 'authGuard']);
+$routes->get('/', 'AdminHome::index');
 // $routes->get('/about', 'about::index');
 // $routes->get('/contact', 'contact::index');
 // $routes->get('/services', 'services::index');
@@ -22,5 +22,5 @@ $routes->match(['get', 'post'],'register/store', 'SignupController::store');
 $routes->get('signin', 'SigninController::index');
 $routes->post('login', 'SigninController::login'); // routing korar por controller er kace giye function a bosate hobe
 
-$routes->get('login', 'SigninController::login');
+$routes->get('/signout','SigninController::logout');
 

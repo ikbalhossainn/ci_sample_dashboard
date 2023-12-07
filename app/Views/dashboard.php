@@ -415,6 +415,7 @@
             </div>
         </div>
     </div>
+    <!-- <?php // echo site_url('signout') ?> -->
 
     <!-- Bootstrap core JavaScript-->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
