@@ -1,0 +1,1268 @@
+INFO - 2023-12-04 03:53:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 03:53:31 --> Undefined variable: title
+in APPPATH\Views\products\create.php on line 13.
+ 1 APPPATH\Views\products\create.php(13): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: title', 'F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\create.php', 13, [])
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\create.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/create', [], true)
+ 5 APPPATH\Controllers\ProductController.php(32): view('products/create')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->create()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 03:53:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 03:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 03:55:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 03:58:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 03:58:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:17:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:17:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-04 04:35:41 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, true)
+#6 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\app\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete(Array, true)
+#7 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(942): App\Controllers\ProductController->delete('6')
+#8 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahm...')
+#12 {main}
+CRITICAL - 2023-12-04 04:35:41 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], true)
+ 4 APPPATH\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete([...], true)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->delete('6')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 04:37:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:37:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-04 04:37:06 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, true)
+#6 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\app\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete(Array, true)
+#7 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+#8 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahm...')
+#12 {main}
+CRITICAL - 2023-12-04 04:37:06 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], true)
+ 4 APPPATH\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete([...], true)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 04:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-04 04:37:31 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, true)
+#6 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\app\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete(Array, true)
+#7 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+#8 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahm...')
+#12 {main}
+CRITICAL - 2023-12-04 04:37:31 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], true)
+ 4 APPPATH\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete([...], true)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 04:38:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:38:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-04 04:38:34 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, true)
+#6 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\app\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete(Array, true)
+#7 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+#8 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahm...')
+#12 {main}
+CRITICAL - 2023-12-04 04:38:34 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], true)
+ 4 APPPATH\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete([...], true)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 04:38:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-04 04:38:42 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, true)
+#6 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\app\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete(Array, true)
+#7 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+#8 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahm...')
+#12 {main}
+CRITICAL - 2023-12-04 04:38:42 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], true)
+ 4 APPPATH\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete([...], true)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 04:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:38:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-04 04:39:38 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, true)
+#6 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\app\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete(Array, true)
+#7 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+#8 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahm...')
+#12 {main}
+CRITICAL - 2023-12-04 04:39:38 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], true)
+ 4 APPPATH\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete([...], true)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 04:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:39:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-04 04:39:51 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, true)
+#6 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\app\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete(Array, true)
+#7 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+#8 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahm...')
+#12 {main}
+CRITICAL - 2023-12-04 04:39:51 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], true)
+ 4 APPPATH\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete([...], true)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 04:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:40:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-04 04:40:26 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\app\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete(Array)
+#7 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+#8 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahm...')
+#12 {main}
+CRITICAL - 2023-12-04 04:40:26 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 04:40:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-04 04:40:33 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, false)
+#6 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\app\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete(Array)
+#7 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+#8 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahm...')
+#12 {main}
+CRITICAL - 2023-12-04 04:40:33 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], false)
+ 4 APPPATH\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete([...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 04:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:41:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:42:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 04:42:22 --> Undefined property: App\Controllers\ProductController::$product
+in APPPATH\Controllers\ProductController.php on line 37.
+ 1 APPPATH\Controllers\ProductController.php(37): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined property: App\\Controllers\\ProductController::$product', 'F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Controllers\\ProductController.php', 37, [...])
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 04:42:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:42:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-04 04:42:33 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, true)
+#6 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\app\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete(Array, true)
+#7 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+#8 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahm...')
+#12 {main}
+CRITICAL - 2023-12-04 04:42:33 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], true)
+ 4 APPPATH\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete([...], true)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 04:42:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-04 04:42:47 --> mysqli_sql_exception: Unknown column 'id' in 'where clause' in F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(Array, true)
+#6 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\app\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete(Array, true)
+#7 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+#8 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahm...')
+#12 {main}
+CRITICAL - 2023-12-04 04:42:47 --> Unknown column 'id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `id` IN :id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete([...], true)
+ 4 APPPATH\Controllers\ProductController.php(37): CodeIgniter\BaseModel->delete([...], true)
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 04:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:43:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:44:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:44:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:44:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:44:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:46:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:46:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:46:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:46:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:46:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:46:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:46:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:46:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:46:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:48:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:48:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:48:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:48:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:48:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:48:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:48:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:48:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:49:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:49:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 04:49:29 --> The route for "/products" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 62.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(62): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('/products')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\ProductController.php(39): redirect('/products')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->delete('7')
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 04:49:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:49:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:49:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:49:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:50:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:50:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:51:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:51:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:51:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:51:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:51:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:52:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:52:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:52:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:52:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:52:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:53:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:53:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:53:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:53:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 04:53:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 05:24:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 05:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 05:25:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 05:26:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 05:26:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 05:27:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:09:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:09:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:10:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:10:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:21:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:24:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:25:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:26:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:27:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:28:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:30:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:30:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:30:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:32:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:32:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 06:32:39 --> Undefined variable: items
+in APPPATH\Views\products\edit.php on line 88.
+ 1 APPPATH\Views\products\edit.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: items', 'F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 88, [])
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(37): view('products/edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 06:32:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:33:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 06:33:40 --> Undefined variable: items
+in APPPATH\Views\products\edit.php on line 88.
+ 1 APPPATH\Views\products\edit.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: items', 'F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 88, [])
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(37): view('products/edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('2')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+CRITICAL - 2023-12-04 06:34:05 --> Argument 2 passed to view() must be of the type array, string given, called in F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\app\Controllers\ProductController.php on line 37
+in SYSTEMPATH\Common.php on line 1178.
+ 1 APPPATH\Controllers\ProductController.php(37): view('products/edit', '2')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('2')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 06:34:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:34:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 06:34:09 --> Argument 2 passed to view() must be of the type array, string given, called in F:\Mizanur_Rahman_1277622\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\app\Controllers\ProductController.php on line 37
+in SYSTEMPATH\Common.php on line 1178.
+ 1 APPPATH\Controllers\ProductController.php(37): view('products/edit', '1')
+ 2 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('1')
+ 3 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 4 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 06:34:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 06:34:48 --> Undefined variable: items
+in APPPATH\Views\products\edit.php on line 88.
+ 1 APPPATH\Views\products\edit.php(88): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: items', 'F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 88, [])
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(37): view('products/edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 06:35:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:35:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:37:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:37:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:39:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:39:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:39:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:39:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:40:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:40:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:40:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:40:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:40:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:40:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:42:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:42:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:46:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:46:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:51:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:51:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 06:51:57 --> Undefined variable: data
+in APPPATH\Views\products\edit.php on line 65.
+ 1 APPPATH\Views\products\edit.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 65, [])
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 06:52:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:52:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 06:52:38 --> Undefined variable: data
+in APPPATH\Views\products\edit.php on line 65.
+ 1 APPPATH\Views\products\edit.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 65, [])
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 06:52:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:52:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:53:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 06:53:00 --> Undefined variable: data
+in APPPATH\Views\products\edit.php on line 65.
+ 1 APPPATH\Views\products\edit.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 65, [])
+ 2 SYSTEMPATH\View\View.php(228): include('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('F:\\Mizanur_Rahman_1277622\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 06:53:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:53:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:53:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:54:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:54:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:54:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:54:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:54:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:54:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:55:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:55:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:55:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:55:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:55:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:56:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:56:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:56:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:56:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:56:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 06:56:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:05:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:05:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:05:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:05:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:11:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:11:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:11:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:11:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:11:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:11:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:11:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:11:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:11:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:12:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:12:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:14:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:14:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:15:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:15:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:15:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:15:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:16:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:16:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:16:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:16:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:17:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+<<<<<<< HEAD
+INFO - 2023-12-04 07:21:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:21:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:21:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:21:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 07:21:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+=======
+ERROR - 2023-12-04 09:31:07 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'ci_project1' in E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'ci_project1', 3306, '', 0)
+#1 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#5 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#6 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\app\Controllers\ProductController.php(24): CodeIgniter\BaseModel->findAll()
+#7 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#8 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahm...')
+#12 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'ci_project1' in E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+#4 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+#5 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\app\Controllers\ProductController.php(24): CodeIgniter\BaseModel->findAll()
+#6 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(942): App\Controllers\ProductController->index()
+#7 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#8 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 E:\Mizanur Rahman\WDPF\XAMPP_7.4.3\htdocs\codeigniter\ci_project1\system\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahm...')
+#11 {main}
+CRITICAL - 2023-12-04 09:31:07 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'ci_project1'
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`', [], false)
+ 3 SYSTEMPATH\Model.php(237): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH\BaseModel.php(624): CodeIgniter\Model->doFindAll(0, 0)
+ 5 APPPATH\Controllers\ProductController.php(24): CodeIgniter\BaseModel->findAll()
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 09:34:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 09:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 09:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 09:34:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 09:34:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 09:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 09:34:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 09:34:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 09:34:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 09:34:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:00:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:00:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:00:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:00:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:00:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:00:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:21:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:21:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:21:15 --> Undefined variable: item
+in APPPATH\Views\products\edit.php on line 63.
+ 1 APPPATH\Views\products\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: item', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:23:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:23:41 --> Undefined variable: item
+in APPPATH\Views\products\edit.php on line 63.
+ 1 APPPATH\Views\products\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: item', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('6')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:26:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:26:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:26:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:26:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:27:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:27:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:27:47 --> Undefined variable: data
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:27:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:28:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:28:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:29:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:29:44 --> Illegal string offset 'product'
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'product\'', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:29:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:29:59 --> Illegal string offset 'product'
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'product\'', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:32:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:32:08 --> Undefined variable: products
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:33:26 --> Undefined variable: products
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:33:27 --> Undefined variable: products
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:33:27 --> Undefined variable: products
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:33:27 --> Undefined variable: products
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:33:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:33:52 --> Undefined variable: products
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:33:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:33:53 --> Undefined variable: products
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:34:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:34:23 --> Undefined variable: item
+in APPPATH\Views\products\edit.php on line 63.
+ 1 APPPATH\Views\products\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: item', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('4')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:34:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:34:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:34:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:34:29 --> Undefined variable: item
+in APPPATH\Views\products\edit.php on line 63.
+ 1 APPPATH\Views\products\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: item', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:34:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:34:39 --> Illegal string offset 'product_id'
+in APPPATH\Views\products\edit.php on line 63.
+ 1 APPPATH\Views\products\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'product_id\'', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:34:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:34:46 --> Illegal string offset 'id'
+in APPPATH\Views\products\edit.php on line 63.
+ 1 APPPATH\Views\products\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id\'', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:34:54 --> Illegal string offset 'id'
+in APPPATH\Views\products\edit.php on line 63.
+ 1 APPPATH\Views\products\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'id\'', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:35:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:35:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:35:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:35:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:37:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:37:13 --> Undefined variable: data
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:37:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:37:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:37:19 --> Undefined variable: data
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:39:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:39:28 --> Undefined variable: data
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(42): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:39:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:39:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:39:34 --> Undefined variable: data
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(42): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:40:29 --> Undefined variable: data
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(42): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:40:32 --> Undefined variable: data
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(42): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:40:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:41:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:41:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:41:06 --> Undefined variable: data
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: data', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(42): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:41:29 --> Undefined variable: product
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: product', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(42): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:41:30 --> Undefined variable: product
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: product', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(42): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:41:30 --> Undefined variable: product
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: product', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(42): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:41:30 --> Undefined variable: product
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: product', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(42): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:41:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:41:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:41:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:41:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:41:42 --> Undefined variable: product
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: product', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(42): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:41:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:41:52 --> Undefined variable: product
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: product', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(42): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('5')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:42:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:42:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:42:33 --> Undefined variable: product
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: product', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(42): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:42:43 --> Undefined variable: product
+in APPPATH\Views\products\edit.php on line 66.
+ 1 APPPATH\Views\products\edit.php(66): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: product', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 66, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(42): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:42:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:42:50 --> Undefined variable: category
+in APPPATH\Views\products\edit.php on line 71.
+ 1 APPPATH\Views\products\edit.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 71, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(42): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:43:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:43:02 --> Undefined variable: product
+in APPPATH\Views\products\edit.php on line 65.
+ 1 APPPATH\Views\products\edit.php(65): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: product', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 65, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(42): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:43:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:45:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:45:42 --> Undefined variable: products
+in APPPATH\Views\products\edit.php on line 63.
+ 1 APPPATH\Views\products\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:45:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:45:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:45:47 --> Undefined variable: products
+in APPPATH\Views\products\edit.php on line 63.
+ 1 APPPATH\Views\products\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:46:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:46:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:46:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:46:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:47:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:47:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:47:32 --> Undefined variable: products
+in APPPATH\Views\products\edit.php on line 63.
+ 1 APPPATH\Views\products\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:47:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:47:34 --> Undefined variable: products
+in APPPATH\Views\products\edit.php on line 63.
+ 1 APPPATH\Views\products\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: products', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:47:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:47:55 --> Illegal string offset 'product_id'
+in APPPATH\Views\products\edit.php on line 63.
+ 1 APPPATH\Views\products\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'product_id\'', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:47:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:47:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:47:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-04 10:47:58 --> Illegal string offset 'product_id'
+in APPPATH\Views\products\edit.php on line 63.
+ 1 APPPATH\Views\products\edit.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Illegal string offset \'product_id\'', 'E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php', 63, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(39): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('3')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('E:\\Mizanur Rahman\\WDPF\\XAMPP_7.4.3\\htdocs\\codeigniter\\ci_project1\\public\\index.php')
+INFO - 2023-12-04 10:48:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:48:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:48:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:48:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:48:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:48:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:49:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:49:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:49:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:49:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:49:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:49:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:49:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:49:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:49:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:53:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-04 10:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+>>>>>>> 82e36b537af65732004b9b13367c1ed00d8cf656

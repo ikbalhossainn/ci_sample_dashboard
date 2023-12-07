@@ -1,0 +1,141 @@
+INFO - 2023-12-07 03:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 03:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 03:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-07 03:40:23 --> syntax error, unexpected '}', expecting ';'
+in APPPATH\Controllers\SigninController.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\app\\Controllers\\SigninController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SigninController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SigninController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\SigninController')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\SigninController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\public\\index.php')
+INFO - 2023-12-07 03:40:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 03:41:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-07 03:41:50 --> syntax error, unexpected '}', expecting ';'
+in APPPATH\Controllers\SigninController.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\app\\Controllers\\SigninController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SigninController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SigninController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\SigninController')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\SigninController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\public\\index.php')
+INFO - 2023-12-07 03:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-07 03:43:08 --> syntax error, unexpected '}', expecting ';'
+in APPPATH\Controllers\SigninController.php on line 12.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\app\\Controllers\\SigninController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\SigninController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\SigninController')
+ 4 [internal function]: spl_autoload_call('App\\Controllers\\SigninController')
+ 5 SYSTEMPATH\CodeIgniter.php(900): class_exists('\\App\\Controllers\\SigninController', true)
+ 6 SYSTEMPATH\CodeIgniter.php(489): CodeIgniter\CodeIgniter->startController()
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\public\\index.php')
+INFO - 2023-12-07 03:44:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 03:45:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 03:49:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 04:21:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 04:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 04:42:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 04:43:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 04:43:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-07 05:08:45 --> Undefined variable: session
+in APPPATH\Views\signin.php on line 45.
+ 1 APPPATH\Views\signin.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\app\\Views\\signin.php', 45, [])
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\app\\Views\\signin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('signin', [], true)
+ 5 APPPATH\Controllers\SigninController.php(14): view('signin')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SigninController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\public\\index.php')
+CRITICAL - 2023-12-07 05:08:47 --> Undefined variable: session
+in APPPATH\Views\signin.php on line 45.
+ 1 APPPATH\Views\signin.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\app\\Views\\signin.php', 45, [])
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\app\\Views\\signin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('signin', [], true)
+ 5 APPPATH\Controllers\SigninController.php(14): view('signin')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SigninController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\public\\index.php')
+CRITICAL - 2023-12-07 05:08:57 --> Undefined variable: session
+in APPPATH\Views\signin.php on line 45.
+ 1 APPPATH\Views\signin.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\app\\Views\\signin.php', 45, [])
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\app\\Views\\signin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('signin', [], true)
+ 5 APPPATH\Controllers\SigninController.php(14): view('signin')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SigninController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\public\\index.php')
+CRITICAL - 2023-12-07 05:27:17 --> Undefined variable: session
+in APPPATH\Views\signin.php on line 45.
+ 1 APPPATH\Views\signin.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\app\\Views\\signin.php', 45, [])
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\app\\Views\\signin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('signin', [], true)
+ 5 APPPATH\Controllers\SigninController.php(14): view('signin')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SigninController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\public\\index.php')
+CRITICAL - 2023-12-07 05:27:18 --> Undefined variable: session
+in APPPATH\Views\signin.php on line 45.
+ 1 APPPATH\Views\signin.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\app\\Views\\signin.php', 45, [])
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\app\\Views\\signin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('signin', [], true)
+ 5 APPPATH\Controllers\SigninController.php(14): view('signin')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SigninController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\public\\index.php')
+CRITICAL - 2023-12-07 05:31:31 --> Undefined variable: session
+in APPPATH\Views\signin.php on line 45.
+ 1 APPPATH\Views\signin.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\app\\Views\\signin.php', 45, [])
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\app\\Views\\signin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('signin', [], true)
+ 5 APPPATH\Controllers\SigninController.php(14): view('signin')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SigninController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\public\\index.php')
+INFO - 2023-12-07 05:32:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-07 05:32:33 --> Undefined variable: session
+in APPPATH\Views\signin.php on line 45.
+ 1 APPPATH\Views\signin.php(45): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: session', 'D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\app\\Views\\signin.php', 45, [])
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\app\\Views\\signin.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('signin', [], true)
+ 5 APPPATH\Controllers\SigninController.php(14): view('signin')
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\SigninController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\SigninController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_template\\public\\index.php')
+INFO - 2023-12-07 05:36:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 05:38:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 05:38:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 07:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 07:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 07:11:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 07:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 07:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-07 07:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
