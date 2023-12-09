@@ -41,7 +41,6 @@ class SigninController extends BaseController
                             "name" => $data['name'], // right side from database
                             "email" => $data['email'],
                             'isLoggedIn'=>TRUE
-
                         ];
 
                         // to set session for showing data in dashboard
