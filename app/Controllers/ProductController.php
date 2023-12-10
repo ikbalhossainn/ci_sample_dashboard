@@ -3,7 +3,9 @@
 namespace App\Controllers;
 
 use App\Controllers\BaseController;
+use App\Models\CategoryModel;  // to add category here
 use App\Models\ProductModel;
+
 
 
 
@@ -11,24 +13,30 @@ class ProductController extends BaseController
 {
 
     private $products ;
+    private $category; // to add category here
     protected $helpers = ['form'];
 
 
     public function __construct()
     {
         $this->products = new ProductModel();
+        $this->category = new CategoryModel();
     }
 
     public function index()
     {
+        $this->products->join('category', 'category.id = products.category_id'); // for category table
         $data['items'] = $this->products->findAll();
-        $data['title'] = "This is my title";
+        $data['title'] = "Display all products";
 
         // print_r($data['products']);
-        return view('products/index', $data);
+       // print_r($data);   // then comment return view after that you will find the array list on browser
+       
+         return view('products/index', $data);
     }
 
     public function create(){
+        $data['cats'] = $this->category->findAll(); // to catch category value here
         return view('products/create');
     }
 
@@ -60,7 +68,6 @@ class ProductController extends BaseController
     }
 
 
-
     public function delete($id){
         //echo $id;
         $this->products->where('product_id', $id);
@@ -74,6 +81,7 @@ class ProductController extends BaseController
     public function store(){
         // return $this->request->getVar('product');
         $data = [
+            'category_id' => $this->request->getVar('cat'),  // to store category here
             'product' => $this->request->getVar('product'),
             'category' => $this->request->getVar('category'),
             'model' => $this->request->getVar('model'),
@@ -100,8 +108,6 @@ class ProductController extends BaseController
             $session->setFlashdata('msg', 'Inserted & Uploaded Successfully');
             $this->response->redirect('/products/');
         }
-
-
 
     }
 }

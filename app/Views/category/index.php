@@ -73,13 +73,13 @@
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
-                                            <th>Product Id</th>
+                                            <th>Id</th>
                                             <th>Product</th>
                                             <th>Category</th>
-                                            <th>Price</th>
+                                            <!-- <th>Price</th>
                                             <th>SKU</th>
                                             <th>Model</th>
-                                            <th>Photo</th>
+                                            <th>Photo</th> -->
                                             <th>Action</th>
                                         </tr>
                                     </thead>
