@@ -1,0 +1,79 @@
+INFO - 2023-12-11 03:19:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:19:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:20:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:20:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:23:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:23:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:24:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:24:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-11 03:28:59 --> mysqli_sql_exception: Unknown column 'product_id' in 'where clause' in D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\Database\MySQLi\Connection.php(306): mysqli->query('DELETE FROM `pr...', 0)
+#1 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `pr...')
+#2 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `pr...')
+#3 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `pr...', Array, false)
+#4 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+#5 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\BaseModel.php(1080): CodeIgniter\Model->doDelete(NULL, false)
+#6 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\app\Controllers\ProductController.php(74): CodeIgniter\BaseModel->delete()
+#7 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+#8 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-11 03:28:59 --> Unknown column 'product_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2790): CodeIgniter\Database\BaseConnection->query('DELETE FROM `products`
+WHERE `product_id` = :product_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 3 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 4 APPPATH\Controllers\ProductController.php(74): CodeIgniter\BaseModel->delete()
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->delete('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_dashboard\\public\\index.php')
+INFO - 2023-12-11 03:29:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:29:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-11 03:29:24 --> mysqli_sql_exception: Unknown column 'products.product_id' in 'where clause' in D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+#5 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+#6 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\app\Controllers\ProductController.php(45): CodeIgniter\BaseModel->find('1')
+#7 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\CodeIgniter.php(942): App\Controllers\ProductController->edit('1')
+#8 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#9 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#10 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#11 D:\xampp\htdocs\wdpf55_codeigniter\sample_project_dashboard\system\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs...')
+#12 {main}
+CRITICAL - 2023-12-11 03:29:24 --> Unknown column 'products.product_id' in 'where clause'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `products`
+WHERE `products`.`product_id` = :products.product_id:', [...], false)
+ 2 SYSTEMPATH\Model.php(196): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(563): CodeIgniter\Model->doFind(true, '1')
+ 4 APPPATH\Controllers\ProductController.php(45): CodeIgniter\BaseModel->find('1')
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('1')
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_dashboard\\public\\index.php')
+INFO - 2023-12-11 03:29:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-11 03:29:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-11 04:06:36 --> The namespace delimiter is a backslash (\), not a slash (/). Route handler: "\App\Controllers\frontend/ProductController::index"
+in SYSTEMPATH\Router\Router.php on line 479.
+ 1 SYSTEMPATH\Router\Router.php(479): CodeIgniter\Router\Exceptions\RouterException::forInvalidControllerName('\\App\\Controllers\\frontend/ProductController::index')
+ 2 SYSTEMPATH\Router\Router.php(186): CodeIgniter\Router\Router->checkRoutes('productsall')
+ 3 SYSTEMPATH\CodeIgniter.php(823): CodeIgniter\Router\Router->handle('productsall')
+ 4 SYSTEMPATH\CodeIgniter.php(450): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\xampp\\htdocs\\wdpf55_codeigniter\\sample_project_dashboard\\public\\index.php')

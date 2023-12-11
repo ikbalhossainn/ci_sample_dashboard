@@ -74,7 +74,7 @@
                                     <thead>
                                         <tr>
                                             <th>Id</th>
-                                            <th>Product</th>
+                                            <!-- <th>Product</th> -->
                                             <th>Category</th>
                                             <!-- <th>Price</th>
                                             <th>SKU</th>
