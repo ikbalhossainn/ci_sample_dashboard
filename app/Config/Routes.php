@@ -37,3 +37,7 @@ $routes->get('category/delete/(:num)','CategoryController::delete/$1'); // categ
 $routes->get('productsall', 'frontend\ProductController::index');
 $routes->post('product/(:num)', 'frontend\ProductController::show/$1');
 
+
+// Editor Routes
+
+$routes->get('/editor', 'EditorController::index', ['filter'=> 'noAuth']);
