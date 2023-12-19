@@ -4,12 +4,14 @@ namespace Config;
 
 use App\Filters\AuthGuard;
 use App\Filters\Cors;
+use App\Filters\NoAuth;
 use CodeIgniter\Config\BaseConfig;
 use CodeIgniter\Filters\CSRF;
 use CodeIgniter\Filters\DebugToolbar;
 use CodeIgniter\Filters\Honeypot;
 use CodeIgniter\Filters\InvalidChars;
 use CodeIgniter\Filters\SecureHeaders;
+
 
 class Filters extends BaseConfig
 {
@@ -29,6 +31,7 @@ class Filters extends BaseConfig
         'secureheaders' => SecureHeaders::class,
         'authGuard'     => AuthGuard::class,
         'cors'          => Cors::class, 
+        'noAuth'        => NoAuth::class
     ];
 
     /**

@@ -5,7 +5,7 @@ use CodeIgniter\Router\RouteCollection;
 /**
  * @var RouteCollection $routes
  */
-$routes->get('/', 'AdminHome::index', ['filter'=> 'authGuard']);
+$routes->get('/', 'AdminHome::index', ['filter'=> 'authGuard', 'filter'=>'noAuth']);
 // $routes->get('/about', 'about::index');
 // $routes->get('/contact', 'contact::index');
 // $routes->get('/services', 'services::index');

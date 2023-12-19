@@ -38,14 +38,22 @@ class SigninController extends BaseController
                     // echo "<br> Password Varified";
                     // to show information in dashboard($userData)
                         $userData = [
-                            "name" => $data['name'], // right side from database
+                            "name" => $data['name'], // right side from database. left side session er rakhar name
                             "email" => $data['email'],
+                            "user_role" => $$data['role'], // role for multiple user
                             'isLoggedIn'=>TRUE
                         ];
 
                         // to set session for showing data in dashboard
                         $session->set($userData);
-                    return redirect()->to('/');
+                         // return redirect()->to('/');  // only for one user. to set multiple user i need to comment out it and go to filter to execute multiple user
+                        if($data['role'] == "Admin"){
+                            return redirect()->to('/');
+                        }
+                        if($data['role'] == "Editor"){
+                            return redirect()->to('/editor');
+                        }
+                    
                 } else {
                     $session->getFlashdata('msg', 'Your Password is incorrect');
                     return view('/signin');
