@@ -37,6 +37,8 @@ $routes->get('category/delete/(:num)','CategoryController::delete/$1'); // categ
 $routes->get('productsall', 'frontend\ProductController::index');
 $routes->post('product/(:num)', 'frontend\ProductController::show/$1');
 
+$routes->get('registration', 'frontend\RegistrationController::registration');
+
 
 // Editor Routes
 
