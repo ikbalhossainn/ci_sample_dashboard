@@ -40,7 +40,7 @@ class SigninController extends BaseController
                         $userData = [
                             "name" => $data['name'], // right side from database. left side session er rakhar name
                             "email" => $data['email'],
-                            "user_role" => $$data['role'], // role for multiple user
+                            "user_role" => $data['role'], // role for multiple user
                             'isLoggedIn'=>TRUE
                         ];
 

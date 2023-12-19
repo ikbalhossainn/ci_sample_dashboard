@@ -30,6 +30,14 @@
         <!-- Sidebar -->
         <?php 
             echo $this->include('includes/sidebar');
+
+            // if(session()->get('user_role') == "Admin"){
+            //     echo $this->include('includes/sidebar');
+            // }
+            // if(session()->get('user_role') == "Editor"){
+            //     echo $this->include('includes/editor_sidebar');
+            // }
+
         ?>
         <!-- End of Sidebar -->
 
