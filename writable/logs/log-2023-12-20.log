@@ -11,3 +11,35 @@ INFO - 2023-12-20 04:59:38 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-12-20 04:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-20 04:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-20 04:59:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-20 10:37:26 --> Class 'Locale' not found
+in SYSTEMPATH\CodeIgniter.php on line 218.
+ 1 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-20 10:37:28 --> Uncaught Error: Class 'Locale' not found in D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\De
+【Previous Exception】
+Error
+Class 'Locale' not found
+#0 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\spark(88): CodeIgniter\CodeIgniter->initialize()
+#1 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2023-12-20 10:38:36 --> Class 'Locale' not found
+in SYSTEMPATH\CodeIgniter.php on line 218.
+ 1 ROOTPATH\spark(88): CodeIgniter\CodeIgniter->initialize()
+CRITICAL - 2023-12-20 10:38:36 --> Uncaught Error: Class 'Locale' not found in D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\I18n\TimeTrait.php:74
+Stack trace:
+#0 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\I18n\TimeTrait.php(115): CodeIgniter\I18n\Time->__construct(NULL, NULL, NULL)
+#1 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\HTTP\ResponseTrait.php(468): CodeIgniter\I18n\Time::now()
+#2 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\HTTP\ResponseTrait.php(446): CodeIgniter\HTTP\Response->sendHeaders()
+#3 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\De
+【Previous Exception】
+Error
+Class 'Locale' not found
+#0 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\spark(88): CodeIgniter\CodeIgniter->initialize()
+#1 {main}
+in SYSTEMPATH\I18n\TimeTrait.php on line 74.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
