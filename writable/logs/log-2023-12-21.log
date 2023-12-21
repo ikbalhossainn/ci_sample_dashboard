@@ -462,3 +462,77 @@ INFO - 2023-12-21 06:42:43 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-12-21 06:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-21 06:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-21 06:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:53:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:53:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:53:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:53:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:53:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:53:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:53:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-21 06:54:00 --> Undefined variable: category
+in APPPATH\Views\products\edit.php on line 71.
+ 1 APPPATH\Views\products\edit.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category', 'D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\app\\Views\\products\\edit.php', 71, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(44): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+INFO - 2023-12-21 07:06:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-21 07:06:31 --> Undefined variable: category
+in APPPATH\Views\products\edit.php on line 71.
+ 1 APPPATH\Views\products\edit.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category', 'D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\app\\Views\\products\\edit.php', 71, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(44): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+INFO - 2023-12-21 07:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 07:06:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 07:09:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 07:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 09:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 09:39:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 09:40:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 09:40:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 09:40:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 09:40:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 09:40:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 09:41:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 09:48:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-21 09:48:34 --> Undefined variable: category
+in APPPATH\Views\products\edit.php on line 71.
+ 1 APPPATH\Views\products\edit.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category', 'D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\app\\Views\\products\\edit.php', 71, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(44): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+INFO - 2023-12-21 09:48:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 09:48:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-21 09:48:49 --> Undefined variable: category
+in APPPATH\Views\products\edit.php on line 71.
+ 1 APPPATH\Views\products\edit.php(71): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: category', 'D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\app\\Views\\products\\edit.php', 71, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\app\\Views\\products\\edit.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/edit', [], true)
+ 5 APPPATH\Controllers\ProductController.php(44): view('products/edit', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->edit('1')
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+INFO - 2023-12-21 09:48:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 09:59:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
