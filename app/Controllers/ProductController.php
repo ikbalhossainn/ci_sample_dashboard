@@ -6,9 +6,6 @@ use App\Controllers\BaseController;
 use App\Models\CategoryModel;  // to add category here
 use App\Models\ProductModel;
 
-
-
-
 class ProductController extends BaseController
 {
 
@@ -37,7 +34,7 @@ class ProductController extends BaseController
 
     public function create(){
         $data['cats'] = $this->category->findAll(); // to catch category value here
-        return view('products/create');
+        return view('products/create', $data);
     }
 
     public function edit($id){
@@ -57,7 +54,7 @@ class ProductController extends BaseController
             'model' => $this->request->getPost('model'),
             'price' => $this->request->getPost('price'),
             'sku' => $this->request->getPost('sku'),
-            // 'photo' => $this->request->getFile('photo')->getName()
+            'photo' => $this->request->getFile('photo')->getName()
         ];
         // print_r($data);
 
@@ -81,13 +78,13 @@ class ProductController extends BaseController
     public function store(){
         // return $this->request->getVar('product');
         $data = [
-            'category_id' => $this->request->getVar('cat'),  // to store category here
+            'category_id' => $this->request->getVar('category'),  // to store category here
             'product' => $this->request->getVar('product'),
             'category' => $this->request->getVar('category'),
             'model' => $this->request->getVar('model'),
             'price' => $this->request->getVar('price'),
             'sku' => $this->request->getVar('sku'),
-            'photo' => $this->request->getFile('photo')->getName(),
+            //'photo' => $this->request->getFile('photo')->getName(),
         ];
         // print_r($data);
 
@@ -101,12 +98,12 @@ class ProductController extends BaseController
         if(! $this->validate($rules)){
             return view('products/create');
         }else{
-            $img = $this->request->getFile('photo');
-            $img->move(WRITEPATH.'uploads');
+            //$img = $this->request->getFile('photo');
+            //$img->move(WRITEPATH.'uploads');
             $this->products->insert($data);
             $session = session();
             $session->setFlashdata('msg', 'Inserted & Uploaded Successfully');
-            $this->response->redirect('/products/');
+            $this->response->redirect('/products');
         }
 
     }

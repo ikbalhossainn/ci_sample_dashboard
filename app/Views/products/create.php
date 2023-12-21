@@ -65,11 +65,13 @@
                                     <input type="text" class="form-control" name="product" value="<?php set_value('product')?>" placeholder="Product Name">
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                    <select id="inputState" class="form-select" value="<?php set_value('category')?>" name="category">
-                                        <option selected>Category</option>
-                                        <option>Smartphone</option>
-                                        <option>Tablet</option>
-                                        <option>Laptop</option>
+                                    <select id="inputState" class="form-select" value="<?php set_value('category')?>" name="category"> // to show rule's error
+                                    <?php 
+                                                // print_r($cat);
+                                                foreach($cats as $cat):
+                                            ?>
+                                            <option value="<?=$cat['id'] ?>"> <?=$cat['category'] ?> </option>
+                                                    <?php endforeach;?>
                                     </select>
                                 </div>
                                 <div class="col-md-6 mb-3">
@@ -81,9 +83,9 @@
                                 <div class="col-md-6 mb-3">
                                     <input type="text" class="form-control" name="sku" value="<?php set_value('sku')?>" placeholder="SKU">
                                 </div>
-                                <div class="col-md-6 mb-12">
-                                    <input type="file" class="form-control" name="photo" value="<?php set_value('photo')?>" placeholder="Add a photo">
-                                </div>
+                                <!-- <div class="col-md-6 mb-12">
+                                    <input type="file" class="form-control" name="photo" value="<?php //set_value('photo')?>" placeholder="Add a photo">
+                                </div> -->
                                 <div class="text-center">
                                     <button type="submit" class="btn btn-primary">Add</button>
                                     <button type="reset" class="btn btn-secondary">Reset</button>

@@ -87,3 +87,378 @@ INFO - 2023-12-21 03:48:53 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2023-12-21 03:48:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-21 03:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2023-12-21 03:49:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 03:51:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-21 03:51:54 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 146.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(146): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\ProductController.php(105): CodeIgniter\HTTP\Files\UploadedFile->move('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\writable\\uploads/')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+INFO - 2023-12-21 03:52:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 03:57:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-21 03:57:57 --> mysqli_sql_exception: Column 'category_id' cannot be null in D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\app\Controllers\ProductController.php(106): CodeIgniter\Model->insert(Array)
+#8 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\CodeIgniter.php(942): App\Controllers\ProductController->store()
+#9 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Commands\Server\rewrite.php(47): require_once('D:\\Skill Develo...')
+#13 {main}
+CRITICAL - 2023-12-21 03:57:57 --> Column 'category_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`category_id`, `product`, `model`, `price`, `sku`) VALUES (:category_id:, :product:, :model:, :price:, :sku:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductController.php(106): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+INFO - 2023-12-21 03:58:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:15:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-21 04:15:49 --> mysqli_sql_exception: Column 'category_id' cannot be null in D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\app\Controllers\ProductController.php(103): CodeIgniter\Model->insert(Array)
+#8 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\CodeIgniter.php(942): App\Controllers\ProductController->store()
+#9 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Commands\Server\rewrite.php(47): require_once('D:\\Skill Develo...')
+#13 {main}
+CRITICAL - 2023-12-21 04:15:49 --> Column 'category_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`category_id`, `product`, `model`, `price`, `sku`) VALUES (:category_id:, :product:, :model:, :price:, :sku:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductController.php(103): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+INFO - 2023-12-21 04:16:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:17:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-21 04:17:02 --> Undefined index: photo
+in APPPATH\Views\products\index.php on line 98.
+ 1 APPPATH\Views\products\index.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: photo', 'D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\app\\Views\\products\\index.php', 98, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\app\\Views\\products\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/index', [], true)
+ 5 APPPATH\Controllers\ProductController.php(32): view('products/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+INFO - 2023-12-21 04:17:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-21 04:17:43 --> Undefined index: photo
+in APPPATH\Views\products\index.php on line 98.
+ 1 APPPATH\Views\products\index.php(98): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: photo', 'D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\app\\Views\\products\\index.php', 98, [...])
+ 2 SYSTEMPATH\View\View.php(228): include('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\app\\Views\\products\\index.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('products/index', [], true)
+ 5 APPPATH\Controllers\ProductController.php(32): view('products/index', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->index()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+INFO - 2023-12-21 04:17:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:18:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:18:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-21 04:18:47 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 146.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(146): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\ProductController.php(102): CodeIgniter\HTTP\Files\UploadedFile->move('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\writable\\uploads/')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+INFO - 2023-12-21 04:19:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-21 04:19:18 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 146.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(146): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\ProductController.php(102): CodeIgniter\HTTP\Files\UploadedFile->move('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\writable\\uploads/')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+CRITICAL - 2023-12-21 04:20:47 --> The original file is not a valid file.
+in SYSTEMPATH\HTTP\Files\UploadedFile.php on line 146.
+ 1 SYSTEMPATH\HTTP\Files\UploadedFile.php(146): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidFile()
+ 2 APPPATH\Controllers\ProductController.php(102): CodeIgniter\HTTP\Files\UploadedFile->move('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\writable\\uploads/')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+INFO - 2023-12-21 04:20:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-21 04:20:55 --> Call to a member function getName() on null
+in APPPATH\Controllers\ProductController.php on line 87.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+CRITICAL - 2023-12-21 04:21:20 --> Call to a member function move() on null
+in APPPATH\Controllers\ProductController.php on line 102.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+CRITICAL - 2023-12-21 04:21:59 --> Call to a member function getName() on null
+in APPPATH\Controllers\ProductController.php on line 87.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+CRITICAL - 2023-12-21 04:22:27 --> Call to a member function getName() on null
+in APPPATH\Controllers\ProductController.php on line 87.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+INFO - 2023-12-21 04:22:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-21 04:22:33 --> Call to a member function getName() on null
+in APPPATH\Controllers\ProductController.php on line 87.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+CRITICAL - 2023-12-21 04:24:06 --> Call to a member function getName() on null
+in APPPATH\Controllers\ProductController.php on line 87.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+ERROR - 2023-12-21 04:24:32 --> mysqli_sql_exception: Column 'category_id' cannot be null in D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\app\Controllers\ProductController.php(103): CodeIgniter\Model->insert(Array)
+#8 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\CodeIgniter.php(942): App\Controllers\ProductController->store()
+#9 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Commands\Server\rewrite.php(47): require_once('D:\\Skill Develo...')
+#13 {main}
+CRITICAL - 2023-12-21 04:24:32 --> Column 'category_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`category_id`, `product`, `model`, `price`, `sku`) VALUES (:category_id:, :product:, :model:, :price:, :sku:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductController.php(103): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+INFO - 2023-12-21 04:25:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:27:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:27:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:30:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-21 04:30:14 --> mysqli_sql_exception: Column 'category_id' cannot be null in D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\app\Controllers\ProductController.php(103): CodeIgniter\Model->insert(Array)
+#8 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\CodeIgniter.php(942): App\Controllers\ProductController->store()
+#9 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Commands\Server\rewrite.php(47): require_once('D:\\Skill Develo...')
+#13 {main}
+CRITICAL - 2023-12-21 04:30:14 --> Column 'category_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`category_id`, `product`, `model`, `price`, `sku`) VALUES (:category_id:, :product:, :model:, :price:, :sku:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductController.php(103): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+INFO - 2023-12-21 04:30:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-21 04:31:18 --> mysqli_sql_exception: Column 'product' cannot be null in D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\app\Controllers\ProductController.php(103): CodeIgniter\Model->insert(Array)
+#8 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\CodeIgniter.php(942): App\Controllers\ProductController->store()
+#9 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Commands\Server\rewrite.php(47): require_once('D:\\Skill Develo...')
+#13 {main}
+CRITICAL - 2023-12-21 04:31:18 --> Column 'product' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`category_id`, `product`, `model`, `price`, `sku`) VALUES (:category_id:, :product:, :model:, :price:, :sku:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductController.php(103): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+INFO - 2023-12-21 04:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:31:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:31:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:31:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:31:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:32:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:32:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:33:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:33:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:33:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:58:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:58:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 04:58:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 05:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 05:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 05:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 05:05:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 05:05:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 05:05:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 05:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 05:08:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 05:10:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 05:10:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 05:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 05:10:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:08:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-21 06:15:03 --> mysqli_sql_exception: Column 'category_id' cannot be null in D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `pr...', 0)
+#1 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `pr...')
+#2 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `pr...')
+#3 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `pr...', Array, false)
+#4 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+#5 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\BaseModel.php(788): CodeIgniter\Model->doInsert(Array)
+#6 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Model.php(715): CodeIgniter\BaseModel->insert(Array, true)
+#7 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\app\Controllers\ProductController.php(103): CodeIgniter\Model->insert(Array)
+#8 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\CodeIgniter.php(942): App\Controllers\ProductController->store()
+#9 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+#10 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#11 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#12 D:\Skill Development\IsDB-BISEW IT Scholarship Programme\Core Course\xampp\htdocs\wdpf55_codeigniter\codeigniter_sample_project_dashboard\system\Commands\Server\rewrite.php(47): require_once('D:\\Skill Develo...')
+#13 {main}
+CRITICAL - 2023-12-21 06:15:04 --> Column 'category_id' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `products` (`category_id`, `product`, `model`, `price`, `sku`) VALUES (:category_id:, :product:, :model:, :price:, :sku:)', [...], false)
+ 2 SYSTEMPATH\Model.php(319): CodeIgniter\Database\BaseBuilder->insert()
+ 3 SYSTEMPATH\BaseModel.php(788): CodeIgniter\Model->doInsert([...])
+ 4 SYSTEMPATH\Model.php(715): CodeIgniter\BaseModel->insert([...], true)
+ 5 APPPATH\Controllers\ProductController.php(103): CodeIgniter\Model->insert([...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\ProductController->store()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\ProductController))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('D:\\Skill Development\\IsDB-BISEW IT Scholarship Programme\\Core Course\\xampp\\htdocs\\wdpf55_codeigniter\\codeigniter_sample_project_dashboard\\public\\index.php')
+INFO - 2023-12-21 06:18:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:18:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:19:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:20:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:22:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:22:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:23:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:23:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:24:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:25:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:29:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:32:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:32:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:33:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:34:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:34:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:35:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:36:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:36:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:36:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:36:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:36:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:36:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:36:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:37:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:37:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:37:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:38:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:38:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:39:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:40:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:41:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:41:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:42:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:42:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:42:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:42:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:43:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-21 06:43:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

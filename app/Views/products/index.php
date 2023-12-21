@@ -74,7 +74,7 @@
                                     <thead>
                                         <tr>
                                             <th>Id</th>
-                                            <th>Category_ID</th>
+                                            <th>Category</th>
                                             <th>Product</th>
                                             <th>Price</th>
                                             <th>SKU</th>
@@ -89,17 +89,17 @@
                                         foreach ($items as $item) :
                                         ?>
                                             <tr>
-                                                <td><?php echo $item['id'] ?></td>
-                                                <td><?php echo $item['category_id'] ?></td>
+                                                <td><?php echo $item['product_id'] ?></td>
+                                                <td><?php echo $item['category'] ?></td>
                                                 <td><?php echo $item['product'] ?></td>
                                                 <td><?php echo $item['price'] ?></td>
                                                 <td><?php echo $item['sku'] ?></td>
                                                 <td><?php echo $item['model'] ?></td>
-                                                <!-- <td><?php //echo $item['photo'] ?></td> -->
+                                                <!-- <td><//?php echo $item['photo'] ?></td> -->
                                                 <td>
-                                                    <a href="<?php echo base_url('/products/edit/'.$item['id'])?>" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                                                    <a href="<?php echo base_url('/products/edit/'.$item['product_id'])?>" class="btn btn-success"><i class="fa fa-edit"></i></a>
 
-                                                    <a href="<?php echo base_url('/products/delete/'.$item['id'])?>" class="btn btn-danger" onclick="return confirm('Are You Sure to Delete?')"><i class="fa fa-trash"></i></a>
+                                                    <a href="<?php echo base_url('/products/delete/'.$item['product_id'])?>" class="btn btn-danger" onclick="return confirm('Are You Sure to Delete?')"><i class="fa fa-trash"></i></a>
 
                                                   
                                                 </td>
